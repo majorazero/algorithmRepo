@@ -1,4 +1,8 @@
-
+/**
+* Compresses strings into their character and thier number of repetition
+* or if no compression is needed returns original string
+* @param {String} string - The string that's to be compressed
+*/
 let stringCompression = (string) => {
   let compress = '';
   let edited = false;
