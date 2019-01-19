@@ -1,7 +1,9 @@
-//edit inclues
-//adding
-//deleting
-//replacing
+/**
+* Should compare if string 1 and string 2 are one letter away, whether it be an insertion
+* deletion, or replacement. If it has one edit or less, return true, else return false.
+* @param {String} str1 - first comparison string
+* @param {String} str2 - 2nd comparison string
+*/
 let oneAway = (str1,str2) => {
   let lengthDiff = Math.abs(str1.length-str2.length);
   if(lengthDiff === 0){
