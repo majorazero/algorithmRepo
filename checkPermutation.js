@@ -30,10 +30,22 @@ let checkPermutation = (string1, string2) => {
   }
 };
 
-console.log(checkPermutation('abcd','abc'));
-console.log(checkPermutation('abcd','abce'));
-console.log(checkPermutation('abcd','abcd'));
-console.log(checkPermutation('dcba','abcd'));
-console.log(checkPermutation('abce','abcd'));
-console.log(checkPermutation('abzc','abed'));
-console.log(checkPermutation('cdbeeez','eeecdbz'));
+// let checkPermutation2 = (string1, string2) => {
+//   let arr1 = string1.split("").sort();
+//   let arr2 = string2.split("").sort();
+//   if(arr1 === arr2){
+//     return true;
+//   }
+//   else{
+//     return false;
+//   }
+// }
+
+
+console.log(checkPermutation2('abcd','abc'));
+console.log(checkPermutation2('abcd','abce'));
+console.log(checkPermutation2('abcd','abcd'));
+console.log(checkPermutation2('dcba','abcd'));
+console.log(checkPermutation2('abce','abcd'));
+console.log(checkPermutation2('abzc','abed'));
+console.log(checkPermutation2('cdbeeez','eeecdbz'));
