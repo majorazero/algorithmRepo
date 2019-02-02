@@ -14,4 +14,21 @@ const badValues = (arr) => {
   return arr;
 }
 
+const badValues2 = (arr) => {
+  for(let i = 0; i < arr.length; i++){
+    switch(arr[i]){
+      case 0:
+      case "":
+      case false:
+      case null:
+        arr.splice(i,1);
+        i--;
+        break;
+      default:
+    }
+  }
+  return arr;
+}
+
 console.log(badValues([0,32,false,3,"",2,'',1,null]));
+console.log(badValues2([0,32,false,3,"",2,'',1,null,0]));
