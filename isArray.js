@@ -1,6 +1,6 @@
 const isArray = (arr) => {
-  console.log(typeof arr);
+  return Array.isArray(arr);
 };
 
-isArray("hello");
-isArray([1,2]);
+console.log(isArray("hello"));
+console.log(isArray([1,2]));
